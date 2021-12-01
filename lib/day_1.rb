@@ -1,7 +1,10 @@
 def countHigher(array)
   count = 0
-  if array[1] > array[0] 
-    count +=1
-  end
+  array.inject do | prev, curr |
+    if prev < curr 
+      count += 1
+    end  
+    prev = curr
+  end  
   count
 end
