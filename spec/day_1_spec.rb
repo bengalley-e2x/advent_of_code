@@ -20,5 +20,10 @@ describe "countHigher" do
     input = [2, 1, 2]
     expect(countHigher(input)).to eq(1)
   end  
+
+  it "counts 2 when input goes up twice incrementally" do
+    input = [1, 2, 3]
+    expect(countHigher(input)).to eq(2)
+  end  
 end    
 
