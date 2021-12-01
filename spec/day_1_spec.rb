@@ -25,5 +25,10 @@ describe "countHigher" do
     input = [1, 2, 3]
     expect(countHigher(input)).to eq(2)
   end  
+
+  it "counts correctly for longer list with more complex pattern" do
+    input = [1, 2, 4, 3, 9, 4, 1, 5]
+    expect(countHigher(input)).to eq(4)
+  end   
 end    
 
