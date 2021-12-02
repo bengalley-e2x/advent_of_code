@@ -19,5 +19,10 @@ describe "submarine" do
   it "counts both positive and negative depth" do 
     input = ["down 3", "up 2"]
     expect(submarine(input)).to eq(1)
+  end
+  
+  it "calculates with all 3 variables" do 
+    input = ["forward 5", "down 3", "up 2"]
+    expect(submarine(input)).to eq(6)
   end   
 end  
