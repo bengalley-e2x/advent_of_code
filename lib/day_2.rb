@@ -1,8 +1,14 @@
 def submarine(input) 
   x = 0
-  split = input.split(" ")
-  if split[0] == "forward"
-    x += split[1].to_i
-  end
-  x  
+  y = 0
+  input.each do | n |
+    split = n.split(" ")
+    case split[0]
+    when "forward"  
+      x += split[1].to_i
+    when "down"
+      y += split[1].to_i
+    end  
+  end  
+  x + y
 end  
