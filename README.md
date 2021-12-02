@@ -41,3 +41,12 @@ Part 1
 | ["down 3", "up 2"]             |       1      |
 | ["forward 5", "down 3", "up 2"]|       2      |
 | ["forward 5", "down 3", "up 2", "forward 2", "down 4", "down 1", "up 3"] |       4      |
+
+Part 2
+
+- Now add a 3rd variable aim. 
+- down increases your aim (z) by the value.
+- up decreases your aim (z) by the value.
+- forward X does two things:
+  - It increases your horizontal position by X units.
+  - It increases your depth by your aim multiplied by X. 
