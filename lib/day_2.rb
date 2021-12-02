@@ -11,7 +11,7 @@ def submarine(input)
     when "down"
       y += split[1].to_i
     when "up"
-      y-= split[1].to_i
+      y -= split[1].to_i
     end  
   end  
   x * y
