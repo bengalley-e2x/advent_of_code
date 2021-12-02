@@ -31,4 +31,12 @@ describe "submarine" do
     expect(submarine(input)).to eq(21)
   end  
 
-end  
+end
+
+describe "submarine_part_2" do
+  it "returns 900 for the provided test data" do
+    input = ["forward 5", "down 5", "forward 8", "up 3", "down 8", "forward 2"]
+    expect(submarine_part_2(input)).to eq(900)
+  end
+end
+    
