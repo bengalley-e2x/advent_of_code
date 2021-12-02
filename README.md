@@ -31,4 +31,13 @@ Part 2
 
 Part 1
 
-- 
+- Given a submarine can move forward (x), down and up (y), when given a list of commands (each with a distance value attached), then we can calculate the final position of the sub.
+
+|    Input                 |    Output    |
+|:------------------------:|:------------:|
+| ["forward 1"]                  |       1      |
+| ["forward 2"]                  |       0      |
+| ["forward 1", "down 1"]        |       1      |
+| ["down 3", "up 2"]             |       1      |
+| ["forward 5", "down 3", "up 2"]|       2      |
+| ["forward 5", "down 3", "up 2", "forward 2", "down 4", "down 1", "up 3"] |       4      |
