@@ -12,5 +12,5 @@ def submarine(input)
       y-= split[1].to_i
     end  
   end  
-  x + y
+  x * y
 end 
