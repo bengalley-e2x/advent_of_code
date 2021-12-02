@@ -1,3 +1,5 @@
+data = File.readlines('input_data/day_2_input.txt')
+
 def submarine(input) 
   x = 0
   y = 0
@@ -14,3 +16,5 @@ def submarine(input)
   end  
   x * y
 end 
+
+puts submarine(data)
