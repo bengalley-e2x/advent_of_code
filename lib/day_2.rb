@@ -8,6 +8,8 @@ def submarine(input)
       x += split[1].to_i
     when "down"
       y += split[1].to_i
+    when "up"
+      y-= split[1].to_i
     end  
   end  
   x + y
