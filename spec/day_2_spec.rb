@@ -21,8 +21,14 @@ describe "submarine" do
     expect(submarine(input)).to eq(1)
   end
   
-  it "calculates with all 3 variables" do 
+  it "calculates all 3 variables" do 
     input = ["forward 5", "down 3", "up 2"]
     expect(submarine(input)).to eq(6)
   end   
+
+  it "calculates longer lists of variables" do 
+    input = ["forward 5", "down 3", "up 2", "forward 2", "down 4", "down 1", "up 3"]
+    expect(submarine(input)).to eq(10)
+  end  
+
 end  
