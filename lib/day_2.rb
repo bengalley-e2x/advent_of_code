@@ -36,7 +36,6 @@ def submarine_part_2(input)
   x * y
 end  
 
-
 puts "Part 1 answer:" 
 puts submarine(data)
 puts "Part 2 answer:" 
