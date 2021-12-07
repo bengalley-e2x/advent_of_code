@@ -55,3 +55,16 @@ Part 2
 |:-------------------------------------------------:|:------------:|  
 | ["forward 5", "down 5", "forward 8", "up 3", "down 8", "forward 2"] |  900   |
 
+#### Day 3
+
+Part 1
+
+- Given a diagnostic report consitsing of a list of binary numbers, when we calculate the most common bit in each position (gamma rate) and the least common bit in each position (epsilon rate), then we can calculate the submarine's power consumption by multiplying the decimal value of these 2 binary numbers.
+
+|    Input                    |  Gamma rate  | Epsilon rate | Power consumption |
+|:---------------------------:|:------------:|:------------:|:-----------------:|
+| ["10101", "00011", "10011"] |   "10011"    |    "01100    |        228        |
+
+Part 2
+
+-
