@@ -18,3 +18,23 @@ describe "gamma_rate" do
   end  
 end
 
+test_2_data = [
+  "00100",
+  "11110",
+  "10110",
+  "10111",
+  "10101",
+  "01111",
+  "00111",
+  "11100",
+  "10000",
+  "11001",
+  "00010",
+  "01010"
+]
+
+describe "part_2" do
+  it "filters for the highest bit in the first position" do
+    expect(oxygen(test_2_data)).to eq(["11110", "10110", "10111", "10101", "11100", "10000", "11001"])
+  end   
+end  

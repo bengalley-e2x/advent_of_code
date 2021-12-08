@@ -42,6 +42,30 @@ def power_consumption(gamma, epsilon)
   power
 end  
 
+def oxygen(input)
+  puts input
+  ones = 0
+  zeros = 0
+  input.each do |num|
+    if num[0] == "0"
+      zeros += 1
+    elsif num[0] == "1"
+      ones += 1
+    end 
+  end   
+  puts "ones: #{ones}, zeros #{zeros}"
+  if ones > zeros 
+    common_bit = "1"
+  else
+    common_bit = "0"
+  end
+  filtered = input.select do | num | 
+    num[0] == common_bit
+  end
+  puts filtered   
+  filtered     
+end  
+
 gamma = gamma(data)
 epsilon = epsilon(gamma)
 
