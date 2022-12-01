@@ -5,22 +5,17 @@ const data = readFileSync(file, 'utf-8');
 
 const meals = data.split('\n');
 
-const elves = meals.forEach((meal) => {
-  
-});
-
-
 let temp = [];
 const results = meals.reduce((all, current) => {
-    if(current === "") {
-        all.push(temp);
-        temp = [];
-    } else {
-        temp.push(current);
-    }
+  if (current === "") {
+    all.push(temp);
+    temp = [];
+  } else {
+    temp.push(current);
+  };
 
     return all;
-},[])
+}, []);
 
 const totals = results.map((elf) => {
   if (elf.length > 1) {
@@ -39,6 +34,3 @@ console.log("A : ", top);
 const top3 = sorted.slice(0, 3).reduce((prev, curr) => prev + curr);
 
 console.log("B : ", top3);
-
-
-
